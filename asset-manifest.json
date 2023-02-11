@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/daily-experiment-pwa/static/css/main.073c9b0a.css",
+    "main.js": "/daily-experiment-pwa/static/js/main.9f8ab8ca.js",
+    "static/js/787.78549bcb.chunk.js": "/daily-experiment-pwa/static/js/787.78549bcb.chunk.js",
+    "service-worker.js": "/daily-experiment-pwa/service-worker.js",
+    "static/media/logo.svg": "/daily-experiment-pwa/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "/daily-experiment-pwa/index.html",
+    "main.073c9b0a.css.map": "/daily-experiment-pwa/static/css/main.073c9b0a.css.map",
+    "main.9f8ab8ca.js.map": "/daily-experiment-pwa/static/js/main.9f8ab8ca.js.map",
+    "787.78549bcb.chunk.js.map": "/daily-experiment-pwa/static/js/787.78549bcb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.9f8ab8ca.js"
+  ]
+}
