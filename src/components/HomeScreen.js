@@ -128,9 +128,9 @@ class HomeScreen extends Component{
         <div >
             <Button title="Log in with Fitbit Account" onPress={this.my_authorize}></Button>
             <p></p>
-            <Button title="open drawer" onPress={()=>{this.props.navigation.openDrawer();}}></Button>
+            <Button title="open drawer" onPress={this.props.toggleDrawer}></Button>
             <p></p>
-            <img width={100} height={100} src={process.env.PUBLIC_URL + '/heilab_logo.png'} />
+           
             <p>{tokenInfo.accessToken}</p>
         </div>
         );

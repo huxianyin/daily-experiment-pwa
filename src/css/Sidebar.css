@@ -1,0 +1,53 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.Sidebar {
+    height: 100%;
+    width: 250px;
+    background: #2d445d;
+  }
+  
+  .SidebarList {
+    height: auto;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .SidebarList .row {
+    width: 100%;
+    height: 60px;
+    /* background-color: cadetblue; */
+    /* border: 1px solid black; */
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+  }
+  
+  .SidebarList .row:hover {
+    cursor: pointer;
+    background-color: #3b627a;
+  }
+  
+  .SidebarList #active {
+    background-color: #3b627a;
+  }
+  
+  .row #icon {
+    height: 60px;
+    flex: 20%;
+    display: grid;
+    place-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .row #title {
+    flex: 70%;
+  }
+  
