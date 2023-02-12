@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
-import { config, config as fitbit_config } from './Fitbit-config';
+import { config as fitbit_config } from './Fitbit-config';
 import { Api } from 'fitbit-api-handler';
 import { Button,Image } from 'react-native-web';
 import { MyContext } from '../Global';
 import {fitbitHelper} from './fitbitHelper';
+import { writeUserData, loadDataByUserID } from './Firebase-config';
+// import Calendar from 'react-calendar';
+// import 'react-calendar/dist/Calendar.css';
+import {Calendar} from 'react-native-calendars';
+
 
 class HomeScreen extends Component{
     static contextType = MyContext;
@@ -94,6 +99,7 @@ class HomeScreen extends Component{
 
     componentDidMount(){
         const {setTokenInfo, tokenInfo} = this.context;
+        if(tokenInfo.accessToken)return;
         const queryParameters = new URLSearchParams(window.location.search)
         const code = queryParameters.get("code");
         if(tokenInfo.accessToken) return;
@@ -132,6 +138,9 @@ class HomeScreen extends Component{
             <p></p>
            
             <p>{tokenInfo.accessToken}</p>
+            <div>
+              <Calendar />
+            </div>
         </div>
         );
     }
