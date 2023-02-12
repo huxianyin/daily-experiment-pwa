@@ -4,15 +4,27 @@
     "private": true,
     "homepage": "https://huxianyin.github.io/daily-experiment-pwa/",
     "dependencies": {
+        "@react-navigation/drawer": "^6.5.8",
+        "@react-navigation/native-stack": "^6.9.9",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
+        "async-storage": "^0.1.0",
+        "crypto": "npm:crypto-browserify",
+        "crypto-browserify": "^3.12.0",
+        "fitbit-api-handler": "^8.0.0",
         "gh-pages": "^5.0.0",
         "http-server": "^14.1.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-native-app-auth": "^6.4.3",
+        "react-native-gesture-handler": "^2.9.0",
         "react-native-web": "^0.18.12",
+        "react-navigation": "^4.4.4",
+        "react-router": "^6.8.1",
+        "react-router-dom": "^6.8.1",
         "react-scripts": "5.0.1",
+        "stream": "npm:stream-browserify",
         "web-vitals": "^2.1.4",
         "workbox-background-sync": "^6.5.4",
         "workbox-broadcast-update": "^6.5.4",
@@ -26,6 +38,10 @@
         "workbox-routing": "^6.5.4",
         "workbox-strategies": "^6.5.4",
         "workbox-streams": "^6.5.4"
+    },
+    "browser": {
+        "crypto": false,
+        "stream": false
     },
     "scripts": {
         "start": "react-scripts start",
