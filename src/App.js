@@ -9,6 +9,7 @@ import "./App.css";
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import CalendarScreen from './components/CalendarScreen';
 
 function App (){   
   const [isOpen, setIsOpen] = React.useState(false)
@@ -28,6 +29,7 @@ function App (){
             <BrowserRouter>
               <Routes>
                 <Route path="/"  element={<HomeScreen toggleDrawer={toggleDrawer}/>} />
+                {/* <Route path="/"  element={<CalendarScreen toggleDrawer={toggleDrawer}/>} /> */}
               </Routes>
             </BrowserRouter>
            
